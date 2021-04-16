@@ -7,7 +7,7 @@ jobs:
     steps:
 
     - name: set env
-      run: echo "first step sets env MY_SECRET to $MY_SECRET"
+      run: echo "first step sets env MY_SECRET to ${MY_SECRET}"
       env:
         MY_SECRET: ${{ secrets.MY_SECRET }}
 
