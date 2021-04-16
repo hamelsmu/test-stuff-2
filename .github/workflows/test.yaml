@@ -7,7 +7,7 @@ jobs:
     steps:
 
     - name: set env
-      run: echo "first step:
+      run: echo "first step:"
       env:
         MY_SECRET: "Hi-Its-Your-Secret"
 
