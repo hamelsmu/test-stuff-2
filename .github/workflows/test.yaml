@@ -12,4 +12,4 @@ jobs:
         MY_SECRET: "Hi-Its-Your-Secret"
 
     - name: inspect env
-      run: echo "$MY_SECRET"
+      run: env
