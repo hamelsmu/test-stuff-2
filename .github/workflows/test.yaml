@@ -1,0 +1,15 @@
+name: CI
+on: push
+
+jobs:     
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: set env
+      run: echo "first step:
+      env:
+        MY_SECRET: "Hi-Its-Your-Secret"
+
+    - name: inspect env
+      run: echo "$MY_SECRET"
