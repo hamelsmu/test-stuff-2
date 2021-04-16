@@ -11,5 +11,10 @@ jobs:
       env:
         MY_SECRET: ${{ secrets.MY_SECRET }}
 
-    - name: inspect env
-      run: env
+    - name: save env to text file
+      run: env > env.txt
+      
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-env
+        path: env.txt
